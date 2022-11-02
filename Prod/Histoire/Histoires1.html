@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../Normalize/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Histoire/Histoires1.css">
+    <!-- Importation Police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoires</title>
+</head>
+
+<nav id="nav">
+    <a class="btnnav" href="../Accueil/Accueil.html">Accueil</a>
+    <a class="btnnav" href="../Register/Register.html">Register</a>
+    <a class="btnnav"  href="../Login/Login.html">Login</a>
+    
+    <script>
+        if (sessionStorage.getItem('connect') == 'oui') {
+            p = document.createElement("p");
+            p.appendChild(document.createTextNode("Connecté"));
+            p.setAttribute('id','login');
+            document.getElementById('nav').appendChild(p);
+        }
+    </script>
+</nav>
+<div class="content">
+
+    <body>
+        <header>
+            <!-- menu de navigation -->
+        </header>
+
+        <h1>Histoires Halloween</h1>
+
+        <!-- Histoire : Dame Blanche -->
+        <div class="histoire">
+            <h2>La Dame Blanche : </h2>
+            <p>Il existe plusieurs versions de cette histoire.
+                <br>
+                Selon des témoignages, elle aurait été vue autant en Europe qu’en Amérique.
+                <br>
+                Voici l’une des nombreuses histoires la mettant en vedette.
+                <br>
+                Prenons cette histoire puisqu'elle est racontée par un médecin.
+                <br>
+                Une personne qui à priori est plutôt réaliste et a les pieds bien sur terre.
+                <br>
+                Le témoignage date de 1977.
+                <br>
+                Après une longue journée de travail, le docteur rentre un soir chez lui, sous une pluie battante.
+                <br>
+                Il voit au bord de la route une jeune femme vêtue de blanc.
+                <br>
+                Il s’arrête et lui propose de la ramener chez elle.
+                <br>
+                Elle accepte et après avoir indiqué son adresse elle ne dit plus un mot.
+                <br>
+                Elle reste très silencieuse jusqu'au moment où ils passent sur le Pont-du-Furet.
+                <br>
+                À cet instant, elle se montre agitée et effrayée.
+                <br>
+                Arrivés à destination, le médecin lui prête son parapluie et attend qu’elle le lui ramène.
+                <br>
+                Ne la voyant pas revenir, il sonne à la porte.
+                <br>
+                Un couple lui ouvre, il raconte alors son histoire et décrit la jeune fille.
+                <br>
+                Le couple, visiblement très ému, lui apprend alors qu’il s’agit de leur fille unique ayant perdu la vie
+                en moto au Pont-du-Furet des années auparavant.
+            </p>
+        </div>
+
+    </body>
+</div>
+<!-- Licence -->
+<footer>Copyright © BY HistoireHalloween</footer></html>

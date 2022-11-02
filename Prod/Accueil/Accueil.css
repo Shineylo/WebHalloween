@@ -1,0 +1,82 @@
+.btnnav{
+    padding: 0 1% 0 1% ;
+    font-size: 30px;
+    border: solid rgb(157, 13, 164);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.btnnav:hover{
+    background: black;
+}
+
+#login{
+    padding: 0 1% 0 1% ;
+    font-size: 30px;
+    border: solid rgb(157, 13, 164);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: rgb(157, 13, 164);
+}
+
+.content {
+    background-color: rgba(15, 15, 15, 0.8);
+    height: 80vh;
+    width: 50%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-image: url(../Assets/Graphique/Background2.jpg);
+    background-size: cover;
+    text-align: center;
+    color: rgb(157, 13, 164);
+}
+
+table {
+    color: rgb(157, 13, 164);
+    border: 2px solid rgb(157, 13, 164);
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid rgb(157, 13, 164);
+    padding: 10px;
+}
+
+table a {
+    color: rgb(157, 13, 164);
+}
+
+table a:hover {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+@media (max-width:1000px) {
+    .content {
+        height: 95vh;
+        width: 100%;
+    }
+
+    footer {
+
+        width: 100%;
+    }
+}

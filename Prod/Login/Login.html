@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="../../Normalize/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    <!-- Importation police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- menu de navigation -->
+        <nav>
+            <a href="../Accueil/Accueil.html">Accueil</a>
+            <a href="../Register/Register.html">Register</a>
+        </nav>
+    </header>
+    <div>
+        <fieldbox>
+            <h1>Login <br></h1>
+            <p id="message"></p>
+            <input type="text" id="login" name="login" placeholder="Login"><br>
+            <input type="password" id="password" name="password" placeholder="Mot de passe"><br>
+            <button id="btnLogin" onclick="verif()">Login</button>
+            <script>
+                // Attribuer les element html
+                login = document.getElementById("login");
+                password = document.getElementById("password");
+                bouton = document.getElementById("btnLogin");
+                message = document.getElementById("message");
+
+                function verif() {
+                    if (login.value == sessionStorage.getItem('login1') && password.value == sessionStorage.getItem('mdp1')) {
+                       sessionStorage.setItem('connect','oui');
+                        window.location.replace("../Accueil/Accueil.html");
+                    } else {
+                        message.innerHTML = "Login ou mot de passe incorrect"
+                    }
+                }
+            </script>
+        </fieldbox>
+    </div>
+</body>
+
+<!-- LICENCE -->
+<footer>Copyright © BY HistoireHalloween</footer></html>
