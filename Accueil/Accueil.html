@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../Normalize/normalize.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="Accueil.css">
+    <!-- Importation police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<nav id="nav">
+    <a class="btnnav" href="../Register/Register.html">Register</a>
+    <a class="btnnav" href="../Login/Login.html">Login</a>
+    <script>
+        if (sessionStorage.getItem('connect') == 'oui') {
+            p = document.createElement("p");
+            p.appendChild(document.createTextNode("Connecté"));
+            p.setAttribute('id','login');
+            document.getElementById('nav').appendChild(p);
+        }
+    </script>
+</nav>
+
+<div class="content">
+
+    <body>
+        <header>
+            <!-- menu de navigation -->
+        </header>
+        <h1> Bienvenue sur le site Histoire Halloween</h1>
+        <p> Ce site regroupe des histoires d'horreur de tout genre</p>
+        <!-- Sommaire (Histoires à lire) -->
+        <table class="inside">
+            <h3>Histoire</h3>
+            <!-- Sommaire (Histoires à lire) -->
+            <thead>
+                <td>La Dame Blanche</td>
+                <td><a href="../Histoire/Histoires1.html">
+                        <bouton>Clique ici</bouton>
+                    </a></td>
+            </thead>
+            <!-- Sommaire (Histoires à lire) -->
+            <tbody>
+                <td>Bloody Mary</td>
+                <td><a href="../Histoire/Histoires2.html">
+                        <bouton>Clique ici</bouton>
+                    </a></td>
+            </tbody>
+        </table>
+
+    </body>
+</div>
+<!-- LICENCE -->
+<footer>Copyright © BY HistoireHalloween</footer></html>
