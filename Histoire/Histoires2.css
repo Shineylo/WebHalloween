@@ -1,0 +1,75 @@
+.btnnav{
+    padding: 0 1% 0 1% ;
+    font-size: 30px;
+    border: solid orangered;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btnnav:hover{
+    background: black;
+}
+
+#login{
+    padding: 0 1% 0 1% ;
+    font-size: 30px;
+    border: solid orangered;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: orangered;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+}
+
+body {
+    background-image: url("../Assets/Graphique/background1.jpg");
+    background-size: cover;
+    text-align: center;
+    color: orangered;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+.content {
+    background-color: rgba(15, 15, 15, 0.8);
+    height: 140vh;
+    width: 50%;
+    margin: auto;
+}
+
+.histoire {
+    margin: auto;
+}
+
+footer {
+    background-color: black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    bottom: 0%;
+
+
+}
+
+
+@media (max-width:1000px) {
+    .content {
+        height: 150vh;
+        width: 100%;
+    }
+
+    footer {
+
+        width: 100%;
+    }
+}

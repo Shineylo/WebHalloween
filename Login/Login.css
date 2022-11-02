@@ -1,0 +1,79 @@
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-image: url(../Assets/Graphique/Login.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+div {
+    width: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    border: solid orange;
+    margin: auto;
+    margin-top: 15%;
+    color: orangered;
+    text-align: center;
+}
+
+input,
+button {
+    margin-bottom: 2%;
+}
+
+#message {
+    color: red;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    padding: 0 1% 0 1% ;
+    text-decoration: none;
+    color: orangered;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: orangered;
+    border: solid orangered;
+}
+
+
+a:hover {
+    background-color: black;
+}
+
+button{
+    padding: 0 1% 0 1% ;
+    text-decoration: none;
+    color: orangered;
+    font-size: 30px;
+    background-color: black;
+    color: orangered;
+    border: solid orangered;
+}
+button:hover {
+    background-color: rgba(255, 68, 0, 0.347);
+}
+
+footer {
+    background-color: black;
+    color: orangered;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+}
+
+@media (max-width:1100px) {
+    .content {
+        height: 90vh;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
